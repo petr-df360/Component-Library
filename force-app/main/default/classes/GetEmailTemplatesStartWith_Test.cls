@@ -1,6 +1,6 @@
 @isTest
 public with sharing class GetEmailTemplatesStartWith_Test {
-
+ 
     @isTest(SeeAllData=true)
     static void testGetEmailTemplates() {
         // Get EmailFolder
@@ -12,7 +12,7 @@ public with sharing class GetEmailTemplatesStartWith_Test {
             new EmailTemplate(Name='QSampleTemplate1', DeveloperName='SampleTemplate1', TemplateType='text', IsActive=true, FolderId=et.FolderId)
         };
 
-        
+
         insert templatesToInsert;
         
         // Initialize the inputs
