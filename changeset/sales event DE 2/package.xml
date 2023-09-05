@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sales event DE</fullName>
+    <types>
+        <members>Sales Show</members>
+        <name>Network</name>
+    </types>
+    <types>
+        <members>SNA_Sales_Show1_sf_default_cdn_Low0V</members>
+        <name>StaticResource</name>
+    </types>
+    <version>58.0</version>
+</Package>

@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Accomodation_Requested__c</fullName>
+        <externalId>false</externalId>
+        <label>Accomodation Requested</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Before</fullName>
+                    <default>false</default>
+                    <label>Before</label>
+                </value>
+                <value>
+                    <fullName>After</fullName>
+                    <default>false</default>
+                    <label>After</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Calendar_Event_External_Id__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <externalId>true</externalId>
+        <label>Calendar Event External Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Calendar_Event__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Calendar Event</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Daemon__c.Type__c</field>
+                <operation>equals</operation>
+                <value>Calendar Event</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Daemon__c</referenceTo>
+        <relationshipName>Calendar_Events</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Calendar_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Calendar Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Clicked__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Clicked</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Completed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Completed</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DateId__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>Global Date</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>131072</length>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>DisplayDate__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( WEEKDAY(Date__c)
+				 ,1,&apos;❼ &apos; +TEXT(DAY(Date__c))+&quot;.&quot;+TEXT(MONTH(Date__c))
+					,2,&apos;① &apos;+TEXT(DAY(Date__c))+&quot;.&quot;+TEXT(MONTH(Date__c))
+					,3,&apos;② &apos;+TEXT(DAY(Date__c))+&quot;.&quot;+TEXT(MONTH(Date__c))
+					,4,&apos;③ &apos;+TEXT(DAY(Date__c))+&quot;.&quot;+TEXT(MONTH(Date__c))
+					,5,&apos;④ &apos;+TEXT(DAY(Date__c))+&quot;.&quot;+TEXT(MONTH(Date__c))
+					,6,&apos;⑤ &apos;+TEXT(DAY(Date__c))+&quot;.&quot;+TEXT(MONTH(Date__c))
+					,7,&apos;❻ &apos;+TEXT(DAY(Date__c))+&quot;.&quot;+TEXT(MONTH(Date__c))
+,null)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>End_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(HOUR(TIMEVALUE(End__c)) = 0,DATEVALUE(End__c)-1,DATEVALUE(End__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>End Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>End_Time__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(HOUR(TIMEVALUE(End__c)) = 0,null,DATETIMEVALUE(End__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>End Time</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>End__c</fullName>
+        <externalId>false</externalId>
+        <label>End</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Global_Calendar__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Global Calendar</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Daemon__c.Type__c</field>
+                <operation>equals</operation>
+                <value>Global Calendar</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Daemon__c</referenceTo>
+        <relationshipName>Global_Calendars</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Is_Cancelled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Cancelled</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_Weekend__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( TEXT(Type__c) = &quot;Global Calendar&quot; &amp;&amp;  ( WEEKDAY(Date__c) = 1 || WEEKDAY(Date__c) = 7),TRUE,FALSE)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Weekend</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Label__c</fullName>
+        <externalId>false</externalId>
+        <label>Label</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Language__c</fullName>
+        <externalId>false</externalId>
+        <label>Language</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Location__c</fullName>
+        <externalId>false</externalId>
+        <label>Location</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>No_Of_People_With_Accomodation__c</fullName>
+        <externalId>false</externalId>
+        <label>No. Of People With Accomodation</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>No__c</fullName>
+        <externalId>false</externalId>
+        <label>No.</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Note__c</fullName>
+        <externalId>false</externalId>
+        <label>Note</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Number_of_People_Registered__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of People Registered</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>One_c__c</fullName>
+        <externalId>false</externalId>
+        <formula>1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>One</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Progress_Indicator__c</fullName>
+        <externalId>false</externalId>
+        <label>Progress Indicator</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Revenue</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Event_Origin__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Sales Event Origin</label>
+        <referenceTo>Sales_Event__c</referenceTo>
+        <relationshipLabel>Aspire Calendars</relationshipLabel>
+        <relationshipName>Aspire_Calendars</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Selected_Arrival_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Selected Arrival Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Show__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <label>Show</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>DATEVALUE(Start__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Start_Time__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(HOUR(TIMEVALUE(Start__c)) = 0, null, Start__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Start Time</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Start__c</fullName>
+        <externalId>false</externalId>
+        <label>Start</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Subject__c</fullName>
+        <externalId>false</externalId>
+        <label>Subject</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TemplateId__c</fullName>
+        <externalId>false</externalId>
+        <label>TemplateId</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Global Calendar</fullName>
+                    <default>false</default>
+                    <label>Global Calendar</label>
+                </value>
+                <value>
+                    <fullName>Calendar Event</fullName>
+                    <default>false</default>
+                    <label>Calendar Event</label>
+                </value>
+                <value>
+                    <fullName>Calendar Event Detail</fullName>
+                    <default>false</default>
+                    <label>Calendar Event Detail</label>
+                </value>
+                <value>
+                    <fullName>Sales Event Participant</fullName>
+                    <default>false</default>
+                    <label>Sales Event Participant</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Variant__c</fullName>
+        <externalId>false</externalId>
+        <label>Variant</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Web_Link__c</fullName>
+        <externalId>false</externalId>
+        <label>Web Link</label>
+        <length>500</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Week__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(WEEKDAY(Date__c),
+	     1, Date__c - 6,
+					 2, Date__c,
+					 3, Date__c - 1,
+						4, Date__c - 2,
+						5, Date__c - 3,
+						6, Date__c - 4,
+					 7, Date__c - 5,
+						null)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Week</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>X1_Full_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>1. Full Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>X2_Full_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>2. Full Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>X3_Full_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>3. Full Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>X4_Full_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>4. Full Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>X5_Full_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>5. Full Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>X6_Full_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>6. Full Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>X7_Full_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>7. Full Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>X8_Full_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>8. Full Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>X9_Full_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>9. Full Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>

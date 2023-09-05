@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <environments>Default</environments>
+    <interviewLabel>ACAL - Create Event Details For All {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>ACAL - Create Event Details For All</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Create_Calendar_Detail</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Calendar Event</stringValue>
+            </value>
+        </filters>
+        <object>Daemon__c</object>
+        <schedule>
+            <frequency>Daily</frequency>
+            <startDate>2023-04-26</startDate>
+            <startTime>20:30:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>Create_Calendar_Detail</name>
+        <label>Create Calendar Detail</label>
+        <locationX>176</locationX>
+        <locationY>276</locationY>
+        <flowName>ACAL_SUB_Create_Calendar_Detail</flowName>
+        <inputAssignments>
+            <name>Event_so_in</name>
+            <value>
+                <elementReference>$Record</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+</Flow>

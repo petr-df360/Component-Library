@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Divize_CYKLISTIKA</fullName>
+    <columns>NAME</columns>
+    <columns>Calendar_Name__c</columns>
+    <columns>Subject__c</columns>
+    <columns>Start_Date__c</columns>
+    <columns>Start_Time__c</columns>
+    <columns>End_Date__c</columns>
+    <columns>End_Time__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Type__c</field>
+        <operation>equals</operation>
+        <value>Calendar Event</value>
+    </filters>
+    <filters>
+        <field>Calendar_Name__c</field>
+        <operation>equals</operation>
+        <value>Divize CYKLISTIKA</value>
+    </filters>
+    <label>Divize CYKLISTIKA</label>
+</ListView>

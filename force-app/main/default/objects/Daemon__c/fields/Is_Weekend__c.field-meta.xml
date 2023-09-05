@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Weekend__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( TEXT(Type__c) = &quot;Global Calendar&quot; &amp;&amp;  ( WEEKDAY(Date__c) = 1 || WEEKDAY(Date__c) = 7),TRUE,FALSE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is Weekend</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

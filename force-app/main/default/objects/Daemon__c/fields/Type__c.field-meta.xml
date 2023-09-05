@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Global Calendar</fullName>
+                <default>false</default>
+                <label>Global Calendar</label>
+            </value>
+            <value>
+                <fullName>Calendar Event</fullName>
+                <default>false</default>
+                <label>Calendar Event</label>
+            </value>
+            <value>
+                <fullName>Calendar Event Detail</fullName>
+                <default>false</default>
+                <label>Calendar Event Detail</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

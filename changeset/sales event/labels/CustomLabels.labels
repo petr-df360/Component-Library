@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>SLSA_Confirm_Registration</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>slse_Confirm Registration</shortDescription>
+        <value>Confirm Registration</value>
+    </labels>
+    <labels>
+        <fullName>slse_Full_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>slse_Full Name</shortDescription>
+        <value>Full Name</value>
+    </labels>
+    <labels>
+        <fullName>slse_Issue_With_Registration</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>slse_Issue With Registration</shortDescription>
+        <value>There were an issue with saving your registration.</value>
+    </labels>
+    <labels>
+        <fullName>slse_Names_For_Accomodation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>slse_Names For Accomodation</shortDescription>
+        <value>Names For Accomodation</value>
+    </labels>
+    <labels>
+        <fullName>slse_Note</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>slse_Note</shortDescription>
+        <value>Note</value>
+    </labels>
+    <labels>
+        <fullName>slse_Number_Of_People_That_Will_Arrive</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>slse_Number Of People That Will Arrive</shortDescription>
+        <value>Number Of People That Will Arrive</value>
+    </labels>
+    <labels>
+        <fullName>slse_Number_Of_People_With_Accommodation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>slse_Number Of People With Accommodation</shortDescription>
+        <value>Number Of People With Accommodation</value>
+    </labels>
+    <labels>
+        <fullName>slse_Thank_you_for_your_registration</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>slse_Thank you for your registration</shortDescription>
+        <value>Thank you for your registration, we are looking forward to see you!</value>
+    </labels>
+    <labels>
+        <fullName>slse_When_You_Will_Arrive</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>slse_When You Will Arrive</shortDescription>
+        <value>When You Will Arrive</value>
+    </labels>
+    <labels>
+        <fullName>slse_Would_You_Like_Us_To_Arrange_Accommodation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>slse_Would You Like Us To Arrange Accommodation</shortDescription>
+        <value>Would You Like Us To Arrange Accommodation</value>
+    </labels>
+    <labels>
+        <fullName>slse_You_are_allready_registered</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>slse_You are allready registered</shortDescription>
+        <value>You are allready registered</value>
+    </labels>
+</CustomLabels>

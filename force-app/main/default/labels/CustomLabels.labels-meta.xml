@@ -1,0 +1,734 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Brand</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Brand</shortDescription>
+        <value>Brand</value>
+    </labels>
+    <labels>
+        <fullName>Cash</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cash</shortDescription>
+        <value>Cash</value>
+    </labels>
+    <labels>
+        <fullName>Credit</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Credit</shortDescription>
+        <value>Credit</value>
+    </labels>
+    <labels>
+        <fullName>Currency_All</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Currency_All</shortDescription>
+        <value>- All -</value>
+    </labels>
+    <labels>
+        <fullName>Customer</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Customer</shortDescription>
+        <value>Customer</value>
+    </labels>
+    <labels>
+        <fullName>End_Customer</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>End Customer</shortDescription>
+        <value>End Customer</value>
+    </labels>
+    <labels>
+        <fullName>FavoritesAddFail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FavoritesAddFail</shortDescription>
+        <value>Unable to add document into favorites!</value>
+    </labels>
+    <labels>
+        <fullName>FavoritesAddOK</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FavoritesAddOK</shortDescription>
+        <value>Document was successfully added into favorites!</value>
+    </labels>
+    <labels>
+        <fullName>FavoritesRemoveFail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FavoritesRemoveFail</shortDescription>
+        <value>Unable to remove document from favorites!</value>
+    </labels>
+    <labels>
+        <fullName>FavoritesRemoveOK</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FavoritesRemoveOK</shortDescription>
+        <value>Document was successfully removed from favorites!</value>
+    </labels>
+    <labels>
+        <fullName>File_AlreadyAttached</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>File_AlreadyAttached</shortDescription>
+        <value>This file is already attached!</value>
+    </labels>
+    <labels>
+        <fullName>File_Cancel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>File_Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>File_ChooseAnotherFile</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>File_ChooseAnotherFile</shortDescription>
+        <value>Please choose another file to attach.</value>
+    </labels>
+    <labels>
+        <fullName>File_ChooseAttachment</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>File_ChooseAttachment</shortDescription>
+        <value>Choose attachment</value>
+    </labels>
+    <labels>
+        <fullName>File_ChooseFile</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>File_ChooseFile</shortDescription>
+        <value>Please choose file to attach</value>
+    </labels>
+    <labels>
+        <fullName>File_DocumentManagement</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>File_DocumentManagement</shortDescription>
+        <value>Document Management</value>
+    </labels>
+    <labels>
+        <fullName>File_ExistingFile</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>File_ExistingFile</shortDescription>
+        <value>Existing file</value>
+    </labels>
+    <labels>
+        <fullName>File_Loading</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>File_Loading</shortDescription>
+        <value>Loading...</value>
+    </labels>
+    <labels>
+        <fullName>File_NewAttachment</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>File_AddNewAttachment</shortDescription>
+        <value>Add</value>
+    </labels>
+    <labels>
+        <fullName>File_NoFile</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>File_NoFile</shortDescription>
+        <value>No file selected!</value>
+    </labels>
+    <labels>
+        <fullName>File_RelatedFiles</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>File_RelatedFiles</shortDescription>
+        <value>Related files</value>
+    </labels>
+    <labels>
+        <fullName>File_Remove</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>File_Remove</shortDescription>
+        <value>Remove</value>
+    </labels>
+    <labels>
+        <fullName>File_Replace</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>File_Replace</shortDescription>
+        <value>Replace</value>
+    </labels>
+    <labels>
+        <fullName>File_Upload</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>File_Upload</shortDescription>
+        <value>Upload</value>
+    </labels>
+    <labels>
+        <fullName>InvoiceType_All</fullName>
+        <language>cs</language>
+        <protected>false</protected>
+        <shortDescription>All</shortDescription>
+        <value>- All -</value>
+    </labels>
+    <labels>
+        <fullName>InvoiceType_Goods</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Goods</shortDescription>
+        <value>Goods</value>
+    </labels>
+    <labels>
+        <fullName>InvoiceType_Services</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Services</shortDescription>
+        <value>Services</value>
+    </labels>
+    <labels>
+        <fullName>Invoice_All</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>All</shortDescription>
+        <value>- All -</value>
+    </labels>
+    <labels>
+        <fullName>Invoice_DoNotPay</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DoNotPay</shortDescription>
+        <value>Do not pay</value>
+    </labels>
+    <labels>
+        <fullName>Invoice_InPayment</fullName>
+        <language>cs</language>
+        <protected>false</protected>
+        <shortDescription>InPayment</shortDescription>
+        <value>In payment</value>
+    </labels>
+    <labels>
+        <fullName>Invoice_NotPaid</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NotPaid</shortDescription>
+        <value>Not paid</value>
+    </labels>
+    <labels>
+        <fullName>Invoice_Paid</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Paid</shortDescription>
+        <value>Paid</value>
+    </labels>
+    <labels>
+        <fullName>Invoice_SentToAccountant</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SentToAccountant</shortDescription>
+        <value>Sent to accountant</value>
+    </labels>
+    <labels>
+        <fullName>Media</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Media</shortDescription>
+        <value>Media</value>
+    </labels>
+    <labels>
+        <fullName>Other</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Other</shortDescription>
+        <value>Other</value>
+    </labels>
+    <labels>
+        <fullName>Payment_Order</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Payment Order</shortDescription>
+        <value>Payment Order</value>
+    </labels>
+    <labels>
+        <fullName>SLSA_Confirm_Registration</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>slse_Confirm Registration</shortDescription>
+        <value>Confirm Registration</value>
+    </labels>
+    <labels>
+        <fullName>Selected_payment_method</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Select payment method</shortDescription>
+        <value>Select payment method</value>
+    </labels>
+    <labels>
+        <fullName>Store</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Store</shortDescription>
+        <value>Store</value>
+    </labels>
+    <labels>
+        <fullName>Supplier</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Supplier</shortDescription>
+        <value>Supplier</value>
+    </labels>
+    <labels>
+        <fullName>Update_Invoice_in_Benefit</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Update_Invoice_in_Benefit</shortDescription>
+        <value>Update Invoice in Benefit</value>
+    </labels>
+    <labels>
+        <fullName>ers_CancelButton</fullName>
+        <categories>buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>ers_ClearFilterAction</fullName>
+        <categories>actions</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Clear Filter</shortDescription>
+        <value>Clear Filter</value>
+    </labels>
+    <labels>
+        <fullName>ers_ClearFilterButton</fullName>
+        <categories>buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Clear All Filters</shortDescription>
+        <value>Clear All Filters</value>
+    </labels>
+    <labels>
+        <fullName>ers_ClearSelectionButton</fullName>
+        <categories>buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Clear Selection</shortDescription>
+        <value>Clear Selection</value>
+    </labels>
+    <labels>
+        <fullName>ers_ColumnHeader</fullName>
+        <categories>headers</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Column</shortDescription>
+        <value>Column</value>
+    </labels>
+    <labels>
+        <fullName>ers_EmptyTableMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Empty</shortDescription>
+        <value>This table currently has no data to display</value>
+    </labels>
+    <labels>
+        <fullName>ers_ErrorRequiredEntry</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required</shortDescription>
+        <value>This is a required entry.  At least 1 row must be selected.</value>
+    </labels>
+    <labels>
+        <fullName>ers_FilterHeader</fullName>
+        <categories>headers</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Filter</shortDescription>
+        <value>Filter</value>
+    </labels>
+    <labels>
+        <fullName>ers_LabelHeader</fullName>
+        <categories>headers</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Label</shortDescription>
+        <value>Label</value>
+    </labels>
+    <labels>
+        <fullName>ers_SaveButton</fullName>
+        <categories>buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Save</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>ers_SetFilterAction</fullName>
+        <categories>actions</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Set Filter</shortDescription>
+        <value>Set Filter</value>
+    </labels>
+    <labels>
+        <fullName>fsc_AccessLevel</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AccessLevel</shortDescription>
+        <value>Access Level</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Back</fullName>
+        <categories>Buttons,Filters,Title</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Back</shortDescription>
+        <value>Back</value>
+    </labels>
+    <labels>
+        <fullName>fsc_ButtonIsNotSupportedMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ButtonIsNotSupportedMessage</shortDescription>
+        <value>Following buttons are note supported:</value>
+    </labels>
+    <labels>
+        <fullName>fsc_ConditionLogicHelpText</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ConditionLogicHelpText</shortDescription>
+        <value>Use parentheses, AND, OR, and NOT to customize the logic. For example, if you enter “(1 AND 2 AND 3) OR 4”, the flow evaluates whether the first three conditions are true or only the fourth condition is true.</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Delete</fullName>
+        <categories>labels, buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Delete</shortDescription>
+        <value>Delete</value>
+    </labels>
+    <labels>
+        <fullName>fsc_FieldIsNotSupportedMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FieldIsNotSupportedMessage</shortDescription>
+        <value>Following fields are not supported:</value>
+    </labels>
+    <labels>
+        <fullName>fsc_FieldTypeNotSuportedMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fsc_FieldTypeNotSuportedMessage</shortDescription>
+        <value>You provided an unsupported value for the DataTypeFilter input on Object and Field Picker. Currently the only supported value is ’picklist’</value>
+    </labels>
+    <labels>
+        <fullName>fsc_For</fullName>
+        <categories>Buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>For</shortDescription>
+        <value>For</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Key_Label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Key Label</shortDescription>
+        <value>Key</value>
+    </labels>
+    <labels>
+        <fullName>fsc_LackingPermissions</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LackingPermissions</shortDescription>
+        <value>You don\&apos;t have the proper permissions for ths action</value>
+    </labels>
+    <labels>
+        <fullName>fsc_ManagerEmptyMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ManagerEmptyMessage</shortDescription>
+        <value>&quot;Manager APEX Class&quot; can not be empty</value>
+    </labels>
+    <labels>
+        <fullName>fsc_MultipleGroupsForRole</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MultipleGroupsForRole</shortDescription>
+        <value>There are multiple groups for that role</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Name</fullName>
+        <categories>quicklinks, Labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Name</shortDescription>
+        <value>Name</value>
+    </labels>
+    <labels>
+        <fullName>fsc_NonePicklistValueLabel</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NonePicklistValueLabel</shortDescription>
+        <value>-- None --</value>
+    </labels>
+    <labels>
+        <fullName>fsc_OWDReadWrite</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OWDReadWrite</shortDescription>
+        <value>Sharing Settings must be private or public read/write to enable manual sharing</value>
+    </labels>
+    <labels>
+        <fullName>fsc_OwnerAdminModify</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OwnerAdminModify</shortDescription>
+        <value>Only the record owner or administrators can modify permissions</value>
+    </labels>
+    <labels>
+        <fullName>fsc_PublicGroups</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PublicGroups</shortDescription>
+        <value>Public Groups</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Queues</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Queues</shortDescription>
+        <value>Queues</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Read</fullName>
+        <categories>labels, buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Read</shortDescription>
+        <value>Read</value>
+    </labels>
+    <labels>
+        <fullName>fsc_ReadWrite</fullName>
+        <categories>labels, buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ReadWrite</shortDescription>
+        <value>Read / Write</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Reason</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Reason</shortDescription>
+        <value>Reason</value>
+    </labels>
+    <labels>
+        <fullName>fsc_RelatedUsers</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RelatedUsers</shortDescription>
+        <value>Related Users</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Roles</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Roles</shortDescription>
+        <value>Roles</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Search</fullName>
+        <categories>Actions,Buttons,quicklinks</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search in</shortDescription>
+        <value>Search in</value>
+    </labels>
+    <labels>
+        <fullName>fsc_SearchFor</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SearchFor</shortDescription>
+        <value>For</value>
+    </labels>
+    <labels>
+        <fullName>fsc_SetAccessLevel</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SetAccessLevel</shortDescription>
+        <value>Set Access Level</value>
+    </labels>
+    <labels>
+        <fullName>fsc_SupportedAddCapabilitiesEmptyMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SupportedAddCapabilitiesEmptyMessage</shortDescription>
+        <value>&quot;Add Capabilities&quot; can not be empty</value>
+    </labels>
+    <labels>
+        <fullName>fsc_SupportedButtonsEmptyMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SupportedButtonsEmptyMessage</shortDescription>
+        <value>&quot;Supported Buttons&quot; can not be empty</value>
+    </labels>
+    <labels>
+        <fullName>fsc_SupportedEditCapabilitiesEmptyMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SupportedEditCapabilitiesEmptyMessage</shortDescription>
+        <value>&quot;Edit Capabilities&quot; can not be empty</value>
+    </labels>
+    <labels>
+        <fullName>fsc_TooManyResultsMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TooManyResultsMessage</shortDescription>
+        <value>Your search found more than 200 results.  Keep typing to make it more specific</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Type</fullName>
+        <categories>Buttons,Filters,Title</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Type</shortDescription>
+        <value>Type</value>
+    </labels>
+    <labels>
+        <fullName>fsc_UserOrGroup</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UserOrGroup</shortDescription>
+        <value>User Or Group</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Users</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Users</shortDescription>
+        <value>Users</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Value_Label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Value Label</shortDescription>
+        <value>Value</value>
+    </labels>
+    <labels>
+        <fullName>slse_Full_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>slse_Full Name</shortDescription>
+        <value>Full Name</value>
+    </labels>
+    <labels>
+        <fullName>slse_Issue_With_Registration</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>slse_Issue With Registration</shortDescription>
+        <value>There were an issue with saving your registration.</value>
+    </labels>
+    <labels>
+        <fullName>slse_Names_For_Accomodation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>slse_Names For Accomodation</shortDescription>
+        <value>Names For Accomodation</value>
+    </labels>
+    <labels>
+        <fullName>slse_Note</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>slse_Note</shortDescription>
+        <value>Note</value>
+    </labels>
+    <labels>
+        <fullName>slse_Number_Of_People_That_Will_Arrive</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>slse_Number Of People That Will Arrive</shortDescription>
+        <value>Number Of People That Will Arrive</value>
+    </labels>
+    <labels>
+        <fullName>slse_Number_Of_People_With_Accommodation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>slse_Number Of People With Accommodation</shortDescription>
+        <value>Number Of People With Accommodation</value>
+    </labels>
+    <labels>
+        <fullName>slse_Thank_you_for_your_registration</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>slse_Thank you for your registration</shortDescription>
+        <value>Thank you for your registration, we are looking forward to see you!</value>
+    </labels>
+    <labels>
+        <fullName>slse_When_You_Will_Arrive</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>slse_When You Will Arrive</shortDescription>
+        <value>When You Will Arrive</value>
+    </labels>
+    <labels>
+        <fullName>slse_Would_You_Like_Us_To_Arrange_Accommodation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>slse_Would You Like Us To Arrange Accommodation</shortDescription>
+        <value>Would You Like Us To Arrange Accommodation</value>
+    </labels>
+    <labels>
+        <fullName>slse_You_are_allready_registered</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>slse_You are allready registered</shortDescription>
+        <value>You are allready registered</value>
+    </labels>
+    <labels>
+        <fullName>sremailNoSearchResultsMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NoSearchResultsMessage</shortDescription>
+        <value>No results found</value>
+    </labels>
+    <labels>
+        <fullName>sremailSearchMembers</fullName>
+        <categories>Actions,Buttons,quicklinks</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search existing Flow resources</shortDescription>
+        <value>Search existing Flow resources</value>
+    </labels>
+</CustomLabels>
